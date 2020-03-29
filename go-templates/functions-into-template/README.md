@@ -1,13 +1,13 @@
 Go uses a map to map a function to string. That special map is called `funcMap`
 
-```var fm = tempalte.funcMap {
+`var fm = tempalte.funcMap {
   "uc": strings.toUpper,
   "ft": strings.toLower,
-}```
+}`
 
 Usage in html:
 
-```{{uc .Name}}``` <br>
+`{{uc .Name}}` <br>
 
 funcMap is of type `map[string]interface{}`
 
