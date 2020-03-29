@@ -1,0 +1,10 @@
+<html>
+<body>
+/**Output of range becomes input of list so there is a concept of pipelining **/
+
+{{range $index, $element :=  .}}
+  <li>{{$index}}-{{$element}}</li>
+{{end}}
+
+</body>
+</html>
