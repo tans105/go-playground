@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+
+{{range .}}
+  <li>{{.AcaYear}}</li>
+
+  <li>{{.Fall.Term}}</li>
+  {{range $course := .Fall.Courses}}
+      {{$course}}
+  {{end}}
+
+  <li>{{.Spring.Term}}</li>
+  {{range $course := .Spring.Courses}}
+      {{$course}}
+  {{end}}
+{{end}}
+
+</body>
+</html>
