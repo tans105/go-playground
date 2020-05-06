@@ -66,27 +66,3 @@ func countDistinct(nums []int, k int) {
 	fmt.Print(len(Map))
 	fmt.Println()
 }
-
-/*
-private static void countDistinct(int[] nums, int k) {
-        Map<Integer, Integer> countMap = new HashMap<>();
-
-        for (int i = 0; i < nums.length; i++) {
-            if (i < k) {
-                int count = countMap.getOrDefault(nums[i], 0);
-                countMap.put(nums[i], count + 1);
-            } else {
-                System.out.print(countMap.size() + "\t");
-                int indexToBeRemoved = i - k;
-
-                if (countMap.get(nums[indexToBeRemoved]) == 1) countMap.remove((int) nums[indexToBeRemoved]);
-                else countMap.put(nums[indexToBeRemoved], countMap.get(nums[indexToBeRemoved]) - 1);
-
-                int count = countMap.getOrDefault(nums[i], 0);
-                countMap.put(nums[i], count + 1);
-            }
-        }
-        System.out.print(countMap.size() + "\t");
-        System.out.println();
-    }
-*/
