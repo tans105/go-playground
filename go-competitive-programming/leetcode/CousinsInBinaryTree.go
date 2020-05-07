@@ -9,16 +9,10 @@ import (
 https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/534/week-1-may-1st-may-7th/3322/
 
 Cousins in Binary Tree
-
 In a binary tree, the root node is at depth 0, and children of each depth k node are at depth k+1.
-
 Two nodes of a binary tree are cousins if they have the same depth, but have different parents.
-
 We are given the root of a binary tree with unique values, and the values x and y of two different nodes in the tree.
-
 Return true if and only if the nodes corresponding to the values x and y are cousins.
-
-
 
 Example 1:
 
@@ -34,8 +28,6 @@ Example 3:
 
 Input: root = [1,2,3,null,4], x = 2, y = 3
 Output: false
-
-
 
 Note:
 
@@ -72,6 +64,7 @@ func isCousins(root *tree.Node, x int, y int) bool {
 }
 
 func isCousinsHelper(root *tree.Node, parent *tree.Node, val int, heightSoFar int) TreeData {
+
 	if root == nil {
 		return TreeData{}
 	}
