@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
-import "github.com/golang-collections/collections/stack"
+import (
+	"fmt"
+	stack "go-playground/go-datastructure/collections"
+)
 
 /*
 https://www.geeksforgeeks.org/check-for-balanced-parentheses-in-an-expression/
@@ -48,7 +50,7 @@ func isBalanced(expr string) bool {
 		index++
 	}
 
-	return stack.Len() == 0  && isBalanced
+	return stack.Length() == 0  && isBalanced
 }
 
 func getOpposite(peek interface{}) string {
