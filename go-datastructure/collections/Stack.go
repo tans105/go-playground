@@ -1,4 +1,4 @@
-package stack
+package collections
 
 type Stack struct {
 	top *node
